@@ -1,4 +1,4 @@
-name: Music Assistant Server
+name: Music Assistant Server - Zing
 version: 2.5.5
 slug: music_assistant
 description: The Music Assistant server is a free, opensource Media library manager
@@ -25,7 +25,7 @@ backup_exclude:
 - collage_images/*
 - .cache/*
 stage: stable
-image: avig/music-assistant-server
+image: avig/music-assistant-server-zing
 tmpfs: true
 options:
   log_level: info
