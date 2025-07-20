@@ -2,11 +2,19 @@
 
 branch=$(cat /data/options.json | jq -r .branch)
 
-echo "Installing latest version from $branch..."
-
+echo ""
+echo "-----------------------------------------------------------"
+echo "Music Assistant dev/nightly version"
+echo "-----------------------------------------------------------"
+echo ""
+echo "Installing latest version from $branch in $VIRTUAL_ENV"
+echo ""
+source $VIRTUAL_ENV/bin/activate
 uv pip install \
     --no-cache \
-    --find-links "https://wheels.home-assistant.io/musllinux/" \
-    "music-assistant[server]@git+https://github.com/music-assistant/server.git@$branch"
+    --link-mode=copy \
+    "music-assistant@git+https://github.com/music-assistant/server.git@$branch"
 
+echo ""
+echo ""
 mass --config /data
