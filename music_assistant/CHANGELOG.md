@@ -1,3 +1,9 @@
+# [2.5.5.1] - 01.07.2025
+
+## What’s Changed
+
+- Added ZiNG provider
+
 # [2.5.5] - 23.06.2025
 
 ## What’s Changed
