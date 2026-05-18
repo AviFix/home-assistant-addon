@@ -1,0 +1,11 @@
+{
+  "type": "music",
+  "domain": "zing",
+  "name": "Zing Music",
+  "description": "Stream Jewish music from Zing Music in Music Assistant. Sign in with your zingmusic.app email and password.",
+  "codeowners": ["@AviG"],
+  "requirements": [],
+  "documentation": "https://github.com/AviFix/home-assistant-addon/blob/main/music_providers/zing/README.md",
+  "multi_instance": true
+}
+
