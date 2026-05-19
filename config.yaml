@@ -1,0 +1,32 @@
+name: "Music Assistant (with Zing)"
+version: "2.8.7"
+slug: "zing_music_assistant"
+description: "Self-updating official Music Assistant Server with integrated Zing provider."
+url: "https://music-assistant.io"
+arch:
+  - amd64
+  - aarch64
+homeassistant_api: true
+discovery:
+  - music_assistant
+auth_api: true
+host_network: true
+ingress: true
+ingress_port: 8094
+panel_icon: mdi:music-assistant
+panel_title: Music Assistant
+panel_admin: false
+uart: false
+apparmor: true
+map:
+  - media:rw
+  - ssl:ro
+init: false
+backup_exclude:
+  - cache.db
+  - collage_images/*
+  - .cache/*
+stage: stable
+privileged:
+  - SYS_ADMIN
+  - DAC_READ_SEARCH
