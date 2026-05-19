@@ -1,5 +1,5 @@
 name: "Music Assistant (with Zing and free YtMusic)"
-version: "1.0.1"
+version: "1.0.2"
 slug: "zing_music_assistant"
 description: "Self-updating official Music Assistant Server with integrated Zing provider."
 url: "https://music-assistant.io"
